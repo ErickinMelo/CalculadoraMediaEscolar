@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.title h1 {
+    text-align: center;
+    font-weight: 700;
+    color: #3CB371;
+}
+.content {
+    display: flex;
+}
+.left-content {
+    margin-right: 40px;
+}
+.how-to-use h3 {
+    color: #3CB371;
+}
+.how-to-use p {
+    font-weight: 500;
+    height: 30px;
+}
+.how-to-use p span {
+    color: #3CB371;
+    font-weight: 700;
+}
+.notas-area {
+    flex-direction: column;
+}
+.notas-area h5 {
+    font-weight: 700;
+    color:#1E90FF;
+}
+.notas-area #valor1,
+.notas-area #valor2 {
+    height: 25px;
+    border-color: #1E90FF;
+    border-radius: 10px;
+}
+.button {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3CB371;
+    border-color: #3CB371;
+    color: #FFF;
+    font-weight: 700;
+}
+.orange {
+    background-color: #CD5C5C;
+    border-color: #CD5C5C;
+}
+.media {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1E90FF;
+    color: #FFF;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.media-valor {
+    margin-top: 20px;
+    font-size: 20px;
+    display: none;
+}
+.right-content h3 {
+    text-align: center;
+    color: #3CB371;
+}
+table {
+    width: 300px;
+    border: 3px solid #1E90FF;
+    border-radius: 6px;
+}
+table thead {
+    background-color: #1E90FF;
+    color: #FFF; 
+    border: 1px solid #1E90FF;
+    border-radius: 3px;
+}
+td, th {
+    padding: 3px;
+    text-align: left;
+}
+tbody td {
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    font-weight: 700;
+    color: rgb(44, 37, 37);
+}
+tbody tr:hover {
+    background-color: #EEE;
+}
+
+
+/* RESPONSIVIDADE */ 
+
+@media (max-width: 1150px) {
+    .content {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-content {
+        margin-right: 0px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .title h1 {
+        font-size: 20px;
+    }
+    .how-to-use h3 {
+        font-size: 15px;
+    }
+    .how-to-use p {
+        height: auto;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora Escolar</title>
+        <link rel="stylesheet" href="estilo.css" />
+    </head>  
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1>CALCULADORA DE MÉDIA ESCOLAR</h1>
+            </div>
+            <div class="content">
+                <div class=left-content>
+                    <div class="how-to-use">
+                        <h3>HOW TO USE?!</h3>
+                        <p>A calculadora funciona de uma maneira muito simples, basta colocar sua nota nos campos abaixo e depois apertar o botão <span>CALCULAR!</span></p>
+                    </div>
+            
+                    <div class="notas-area">
+                        <h5>Primeria Nota</h5>
+                        <input id="valor1" type="number" placeholder="0 a 10" min="0" max="10"> 
+                        <h5>Segunda Nota</h5>
+                        <input id="valor2" type="number" placeholder="0 a 10" min="0" max="10"> 
+                    </div>
+                    <div class="button-area">
+                        <button onclick="media()" class="button">CALCULAR</button>
+                        <button onclick=" location.reload()" class="button orange">LIMPAR</button>
+                    </div>    
+                    <div class="media">
+                            SUA MÉDIA É:
+                            <div class="media-valor"></div>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <h3>MÉDIA A-F</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>MÉDIA</th>
+                                <th>NOTA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="lineA">
+                                <td>A</td>
+                                <td>10-9</td>
+                            </tr>
+                            <tr class="lineB">
+                                <td>B</td>
+                                <td>8-7</td>
+                            </tr>
+                            <tr class="lineC">
+                                <td>C</td>
+                                <td>6-5</td>
+                            </tr>
+                            <tr class="lineD">
+                                <td>D</td>
+                                <td>4-3</td>
+                            </tr>
+                            <tr class="lineE">
+                                <td>E</td>
+                                <td>2-1</td>         
+                            </tr>
+                            <tr class="lineF">
+                                <td>F</td>
+                                <td>REPROVADO</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>            
+        </div>  
+        <script src="script.js"></script> 
+    </body>  
+</html>
