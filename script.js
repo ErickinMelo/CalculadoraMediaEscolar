@@ -4,6 +4,7 @@ let lineC = document.querySelector('.lineC');
 let lineD = document.querySelector('.lineD');
 let lineE = document.querySelector('.lineE');
 let lineF = document.querySelector('.lineF');
+
     function removeBg() {
         lineA.style.backgroundColor = '';
         lineB.style.backgroundColor = '';
